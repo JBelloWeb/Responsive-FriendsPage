@@ -703,12 +703,59 @@ footer
 
     main
     {
-        div.col-8
+        padding: 0px;
+        div.col-12-m
         {
             flex-direction: column;
         }
+        div.col-12m
+        {
+            padding: 20px 0;
+        }
         p{margin: 0;}
+        h2{
+            font-size: 1.5rem;
+            text-align: center;
+        }
     }
+
+    footer
+    {
+        height: 100%;
+        div.col-12
+        {
+            padding: 10px;
+            height: 100%;
+        }
+        div.col-6
+        {
+            height: 100%;
+        }
+        ul
+        {
+            padding: 10px 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            img{width: 30px;}
+        }
+    }
+
+    
+    .col-1-m { width:8.3333% }
+    .col-2-m { width:16.6667% }
+    .col-3-m { width:25% }
+    .col-4-m { width:33.3333% }
+    .col-5-m { width:41.6667% }
+    .col-6-m { width:50% }
+    .col-7-m { width:58.3333% }
+    .col-8-m { width:66.6667% }
+    .col-9-m { width:75% }
+    .col-10-m { width:83.3333% }
+    .col-11-m { width:91.6667% }
+    .col-12-m { width: 100% }
 }
 
 /* Animaciones */
