@@ -1,0 +1,680 @@
+@font-face
+{
+    font-family: 'friends';
+    src: url(../assets/fonts/GABRWFFR.TTF);
+}
+@font-face
+{
+    font-family: 'josefine';
+    src: url(../assets/fonts/JosefineSans/JosefinSans-Regular.ttf);
+}
+@font-face
+{   
+    font-family: 'josefine-bold';
+    src: url(../assets/fonts/JosefineSans/JosefinSans-Bold.ttf);
+}
+@font-face
+{    
+    font-family: 'josefine-itallic';
+    src: url(../assets/fonts/JosefineSans/JosefinSans-Italic.ttf);
+}
+
+:root
+{
+    --black: #1E1E1E;
+    --white: #FFFF;
+    --purple: #A1A5D8;
+    --blue: #324376;
+    --red: #D73B1B;
+    --yellow: #FFCB05;
+    --orange: #F49857;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html
+{
+    font-family: 'josefine';
+}
+
+#thanks
+{ 
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    h2
+    {
+       font-size: 5rem; 
+    }   
+    p{font-family: 'josefine-itallic'; font-size: 1.25rem;}
+   
+}
+
+#header-section
+{
+    height: 100vh;
+    #header-img
+    {
+        height: calc(100vh - 40vh);
+        margin-right: 10%;
+        margin-top: 15vh;
+        filter: drop-shadow(10px 10px 10px var(--black));
+    }
+    h1
+    {
+        font-family: 'friends';
+        font-size: 7rem;
+        margin-right: 10vw;
+        margin-top: 20vh;
+        color: var(--white);
+        text-shadow: 3px 3px 6px var(--black);
+    }
+}
+
+#nav-bar
+{
+    z-index: 1;
+    position: fixed;
+    left: 15%;
+    top: 0;
+    padding: 0 2vw;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 2px 2px 10px 2px  rgba(0, 0, 0, .1);
+    background-color: var(--white);
+    a
+    {
+        font-family: 'friends';
+        font-size: 1vw;
+        text-decoration: none;
+        color: var(--black);
+    }
+    img
+    {
+        width: 55%;
+        &:hover{transform: scale(0.8);}
+        transition: all 0.2s;
+    }
+}
+
+#character-banner
+{
+    height: 80vh;
+    background-image: url(../media/gang.jpg);
+    background-attachment: fixed;
+    background-position: 50% 40%;
+    margin-bottom: 100px;
+}
+#info-banner
+{
+    height: 80vh;
+    background-image: url(../media/banner.jpg);
+    background-position: top center;
+}
+#forms-banner
+{
+    height: 80vh;
+    background-image: url(../media/cafe-banner.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+#forms-section
+{
+    background-image: url(../media/cafe-bg.jpg);
+    background-attachment: fixed;
+   div.box-shadow
+   {
+        border-radius: 25px;
+        margin: 100px auto;
+   }
+   form{padding: 50px;}
+   textarea{max-width: 500px; width: 500px; min-height: 100px;}
+}
+
+#send-button
+{
+    input
+    {
+        padding: 10px;
+        border-radius: 25px;
+        background-color: var(--yellow);
+        font-family: 'josefine';
+        &:hover{cursor:pointer;filter: brightness(1.1);}
+    }
+    
+}
+
+.big-header
+{
+    width: 100%;
+    padding: 50px;
+    color: var(--white);
+    font-family: 'friends';
+    font-size: 1.5rem;
+    letter-spacing: 15px;
+}
+
+main
+{
+    padding: 50px;
+
+    section
+    {
+        padding: 0;
+        margin: 100px 0;
+    }
+
+    div.col-8
+    {
+        border-radius: 25px;
+    }
+    figure
+    {
+        width: 100%;
+        padding: 10px;
+        img{width: 100%;}
+    }
+    div.col-6
+    {
+        padding: 20px;
+    }
+    h2
+    {
+        font-size: 2vw;
+        text-align: center;
+    }
+    p
+    {
+        margin: 0 20px;
+        line-height: 1.3;
+    }
+}
+
+section
+{
+
+    min-height: 80vh;
+    p
+    {
+        font-size: 1.1rem;
+        padding: 0 50px;
+        line-height: 1.3;
+    }
+    a.expand-link
+    {
+        figure
+        {
+            position: absolute;
+            img{width: 50px; height: 50px;}    
+        } 
+    }
+}
+
+#map
+{
+    margin-top: 100px;
+    border-radius: 25px;
+    /*border: 5px solid var(--black) !important;*/
+}
+#place
+{
+    background-image: url(../media/map-bg.jpg);
+    background-attachment: fixed;
+}
+#music
+{
+    background-image: url(../media/music-bg.jpg);
+    background-attachment: fixed;
+    div.flex-container{padding-top: 100px;}
+    audio{border: 5px var(--blue) solid; border-radius: 50px; &:hover{scale: 1.2; }transition: all 0.3s;}
+}
+#staff
+{
+    background-image: url(../media/staff-bg.jpg);
+    background-attachment: fixed;
+
+    ul
+    {
+        margin: 60px auto;
+        li
+        {
+            list-style: none;
+            div
+            {
+                border: 3px var(--yellow) solid;
+                border-radius: 25px;
+                height: 300px;
+                max-height: 300px;
+                gap: 0;
+                figure 
+                {
+                    border-radius: 20px;
+                    max-height: 90%;
+                    overflow: hidden;
+                    img
+                    {
+                        max-width: 100%;
+                        &:hover
+                        {
+                            scale: 1.2;
+                        }
+                        transition: all 0.5s;
+                    }
+                }
+                
+                h4{color: var(--white);}
+            }  
+        } 
+    }
+    
+}
+
+.expand-link
+{
+    padding: 30px;
+    border-radius: 30px; 
+}
+
+#banners
+{
+    gap: 0;
+    border-radius:  25%;
+    
+    div
+    {
+        align-items: center;
+        h2
+        {
+            writing-mode: vertical-rl;
+            margin: 80% auto;
+            font-size: 2.5rem;
+            color: var(--white);
+        }
+    }
+}
+
+#monica
+{
+    border-radius: 25px 0 0 25px;
+    figure{margin-left: 20%;}
+    img{box-shadow: -10px 10px 3px  var(--red);}
+    h3{font-size: 2rem;}
+    p{ max-width: 90%; line-height: 1.3;}
+    &:target
+    {
+        width: 90%;
+        background-color: var(--white);
+        h2{display: none;}
+        div.d-none
+        {
+            display: flex;
+            justify-content: center;
+            animation: appear 0.8s linear;
+        }
+        ~ #chandler
+        {width: 2%; background-color: var(--blue); h2{display: none;}}
+        ~ #rachel
+        {width: 2%; background-color: var(--red); h2{display: none;}}
+        ~ #ross
+        {width: 2%; background-color: var(--blue); h2{display: none;}}
+        ~ #phoebe   
+        {width: 2%; background-color: var(--red); h2{display: none;}}
+        ~ #joey
+        {width: 2%; background-color: var(--blue); h2{display: none;}}
+    }
+    transition: all 0.5s;
+}
+html:has(#monica:target) body{background-color: var(--purple) !important;}
+
+#chandler
+{
+    figure{margin-left: 20%;}
+    img{box-shadow: -10px 10px 3px  var(--blue);}
+    h3{font-size: 2rem;}
+    p{ max-width: 90%; line-height: 1.3;}
+    &:target
+    {
+        width: 100%;
+        background-color: var(--white);   
+        h2{display: none;} 
+        div.d-none
+        {
+            display: flex;
+            justify-content: center;
+            animation: appear 0.8s linear;
+        }
+        ~ #rachel
+        {width: 2%; background-color: var(--red); h2{display: none;}}
+        ~ #ross
+        {width: 2%; background-color: var(--blue); h2{display: none;}}
+        ~ #phoebe
+        {width: 2%; background-color: var(--red); h2{display: none;}}
+        ~ #joey
+        {width: 2%; background-color: var(--blue); h2{display: none;}}
+    }
+    transition: all 0.5s;
+}
+html:has(#chandler:target) body{background-color: var(--purple) !important;}
+div:has(#chandler:target) #monica {width: 2%; background-color: var(--red); h2{display: none;}}
+
+#rachel
+{
+    figure{margin-left: 20%;}
+    img{box-shadow: -10px 10px 3px  var(--red);}
+    h3{font-size: 2rem;}
+    p{ max-width: 90%; line-height: 1.3;}
+    &:target
+    {
+        width: 90%;
+        background-color: var(--white);
+        h2{display: none;}
+        div.d-none
+        {
+            display: flex;
+            justify-content: center;
+            animation: appear 0.8s linear;
+        }
+        ~ #ross
+        {width: 2%; background-color: var(--blue); h2{display: none;}}
+        ~ #phoebe
+        {width: 2%; background-color: var(--red); h2{display: none;}}
+        ~ #joey
+        {width: 2%; background-color: var(--blue); h2{display: none;}}
+    }
+    transition: all 0.5s;
+}
+html:has(#rachel:target) body{background-color: var(--purple) !important;}
+div:has(#rachel:target) #monica {width: 2%; background-color: var(--red); h2{display: none;}}
+div:has(#rachel:target) #chandler {width: 2%; background-color: var(--blue); h2{display: none;}}
+
+#ross
+{
+    figure{margin-left: 20%;}
+    img{box-shadow: -10px 10px 3px  var(--purple);}
+    h3{font-size: 2rem;}
+    p{ max-width: 90%; line-height: 1.3;}
+    &:target
+    {
+        width: 90%;
+        background-color: var(--white);
+        h2{display: none;}
+        div.d-none
+        {
+            display: flex;
+            justify-content: center;
+            animation: appear 0.8s linear;
+        }
+        ~ #phoebe
+        {width: 2%; background-color: var(--red); h2{display: none;}}
+        ~ #joey
+        {width: 2%; background-color: var(--blue); h2{display: none;}}
+    }
+    transition: all 0.5s;
+}
+html:has(#ross:target) body{background-color: var(--purple) !important;}
+div:has(#ross:target) #monica {width: 2%; background-color: var(--red); h2{display: none;}}
+div:has(#ross:target) #chandler {width: 2%; background-color: var(--blue); h2{display: none;}}
+div:has(#ross:target) #rachel {width: 2%; background-color: var(--red); h2{display: none;}}
+
+
+#phoebe
+{
+    figure{margin-left: 20%;}
+    img{box-shadow: -10px 10px 3px  var(--red);}
+    h3{font-size: 2rem;}
+    p{ max-width: 90%; line-height: 1.3;}
+    &:target
+    {
+        width: 90%;
+        max-width: 90%;
+        background-color: var(--white);
+        h2{display: none;}
+        div.d-none
+        {
+            display: flex;
+            justify-content: center;
+            animation: appear 0.8s linear;
+        }
+        ~ #joey
+        {width: 2%; background-color: var(--blue); h2{display: none;}}
+    }
+    transition: all 0.5s;
+}
+html:has(#phoebe:target) body{background-color: var(--purple) !important;}
+div:has(#phoebe:target) #monica {width: 2%; background-color: var(--red); h2{display: none;}}
+div:has(#phoebe:target) #chandler {width: 2%; background-color: var(--blue); h2{display: none;}}
+div:has(#phoebe:target) #rachel {width: 2%; background-color: var(--red); h2{display: none;}}
+div:has(#phoebe:target) #ross {width: 2%; background-color: var(--blue); h2{display: none;}}
+
+
+#joey
+{
+    border-radius: 0 25px 25px 0;
+    figure{margin-left: 20%;}
+    img{box-shadow: -10px 10px 3px  var(--purple);}
+    h3{font-size: 2rem;}
+    p{ max-width: 90%; line-height: 1.3;}
+    &:target
+    {
+        width: 90%;
+        background-color: var(--white);
+        h2{display: none;}
+        div.d-none
+        {
+            display: flex;
+            justify-content: center;
+            animation: appear 0.8s linear;
+        }
+    }
+    transition: all 0.5s;
+}
+html:has(#joey:target) body{background-color: var(--purple) !important;}
+div:has(#joey:target) #monica {width: 2%; background-color: var(--red); h2{display: none;}}
+div:has(#joey:target) #chandler {width: 2%; background-color: var(--blue); h2{display: none;}}
+div:has(#joey:target) #rachel {width: 2%; background-color: var(--red); h2{display: none;}}
+div:has(#joey:target) #ross {width: 2%; background-color: var(--blue); h2{display: none;}}
+div:has(#joey:target) #phoebe {width: 2%; background-color: var(--red); h2{display: none;}}
+
+
+.character-expand
+{
+    height: 500px;
+}
+
+footer
+{
+    height: 55vh;
+    color: var(--white);
+    font-size: 1.1rem;
+    div.col-12
+    {
+        padding: 50px 20px;
+        height: 100%;
+    }
+    div.col-6
+    {
+        height: 100%;
+    }
+    ul
+    {
+        padding: 70px;
+        list-style: none;
+        img{width: 50px;}
+    }
+}
+
+#footer-nav
+{
+    a
+    {
+        color: var(--white);
+        text-decoration: none;
+        &:hover
+        {
+            text-decoration:underline; 
+        }
+    }
+    ul
+    {
+        margin-left: 50px;
+        list-style: circle;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+#nombre
+{
+    font-family: 'josefine-bold';
+}
+
+.bg-color-purple
+{
+    background-color: var(--purple);
+}
+.bg-color-red
+{
+    background-color: var(--red);
+}
+.bg-color-yellow
+{
+    background-color: var(--yellow);
+}
+.bg-color-orange
+{
+    background-color: var(--orange);
+}
+.bg-color-blue
+{
+    background-color: var(--blue);
+}
+.bg-color-black
+{
+    background-color: var(--black);
+}
+.bg-color-white
+{
+    background-color: var(--white);
+}
+
+.box-shadow
+{
+    box-shadow: 0 14px 28px 16px rgba(0, 0, 0, .1);
+}
+
+/* Columnas */
+.col-1 { width:8.3333% }
+.col-2 { width:16.6667% }
+.col-3 { width:25% }
+.col-4 { width:33.3333% }
+.col-5 { width:41.6667% }
+.col-6 { width:50% }
+.col-7 { width:58.3333% }
+.col-8 { width:66.6667% }
+.col-9 { width:75% }
+.col-10 { width:83.3333% }
+.col-11 { width:91.6667% }
+.col-12 { width: 100% }
+
+
+.flex-container
+{
+    margin: 0 auto;
+    max-width: 80vw;
+    display: flex; 
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.wrap
+{
+    flex-wrap: wrap;
+}
+
+.fd-column
+{
+    flex-direction: column;
+}
+
+.justify-end
+{
+    justify-content: flex-end;
+}
+
+.justify-around
+{
+    justify-content: space-around;
+}
+
+.justify-evenly
+{
+    justify-content: space-evenly;
+}
+
+.justify-center
+{
+    justify-content: center;
+}
+
+.t-allign-center
+{
+    text-align: center;
+}
+.t-allign-right
+{
+    text-align: right;
+}
+.t-allign-left
+{
+    text-align: left;
+}
+
+
+.d-none
+{
+    display: none;
+}
+
+
+
+.shacking:hover
+{
+    animation: shacke 0.3s alternate infinite;
+}
+
+/* Animaciones */
+@keyframes shacke
+{
+    0%
+    {
+        transform: rotate(0deg);
+        color: var(--red);
+    }
+    
+    50%
+    {
+        transform: rotate(2deg);
+        color: var(--purple);
+    }    
+
+    100%
+    {
+        transform: rotate(-2deg);
+        color: var(--yellow);
+    }
+}
+
+@keyframes appear
+{
+    0%{filter: opacity(0) saturate(0);}
+    85%{scale: 1; filter: brightness(1) opacity(.75) saturate(0);}
+    90%{filter: opacity(1) brightness(10) saturate(0); scale: 1.1;}
+    100%{ scale: 1; filter: opacity(1) brightness(1) saturate(1);}
+}

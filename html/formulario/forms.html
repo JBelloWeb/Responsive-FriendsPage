@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Vive la experiencia</title>
+    <link rel="icon" href="../../favicon.ico">
+</head>
+<body>
+    <header>
+        <div id="forms-banner" class="col-12">
+            
+        </div>
+    </header>
+    <nav id="nav-bar" class="flex-container justify-around">
+            <a href="https://www.warnerbros.com/tv/friends" target="_blank">
+                <figure>
+                    <img src="../../media/logo.png" alt="friends logo">
+                </figure> 
+            </a>
+    
+           <ul class="flex-container justify-end">
+                <li class="shacking"><a href="../index.html">Inicio</a></li>
+                <li class="shacking"><a href="../list.html">Personajes</a></li>
+                <li class="shacking"><a href="../info.html">Conocer Más</a></li>
+                <li class="shacking"><a href="forms.html">Vive la Experiencia</a></li>
+            </ul> 
+    </nav>
+
+    <section id="forms-section">
+        <h2 class="t-allign-center big-header bg-color-yellow">THE FRIENDS EXPERIENCE</h2>
+
+        <div class="bg-color-white box-shadow col-6">
+                <form class="flex-container wrap" action="thanks.html" method="get">
+                    <div>
+                        <label for="name" class="bg-color-purple">Nombre:</label>
+                        <input 
+                            type="text" 
+                            name="name" 
+                            id="name" 
+                            required
+                            autocomplete="on"
+                            placeholder="...">
+                    </div>
+
+                    <div>
+                        <label for="last_name" class="bg-color-purple">Apellido:</label>
+                        <input 
+                            type="text" 
+                            name="last_name" 
+                            id="last_name" 
+                            autocomplete="on"
+                            required 
+                            placeholder="...">
+                    </div>
+
+                    <div>
+                        <label for="email" class="bg-color-purple">Correo Electronico:</label>
+                        <input 
+                            type="email" 
+                            name="email" 
+                            id="email" 
+                            autocomplete="on"
+                            required 
+                            placeholder="central@perk.com">
+                    </div>
+
+                    <div>
+                        <label for="birthday">Fecha de Nacimiento</label>
+                        <input 
+                            type="date"
+                            id="birthday"
+                            name="birthday">
+                    </div>
+                    <div>
+                        <label for="favorite">Personaje favorito</label>
+                        <select name="favorite" id="favorite">
+                            <option value="joey">Joey Tribbiani</option>
+                            <option value="rachel">Rachel Green</option>
+                            <option value="ross">Ross Geller</option>
+                            <option value="phoebe">Phoebe Buffay</option>
+                            <option value="chandler" selected>Chandler Bing</option>
+                            <option value="monica">Monica Geller</option>
+                        </select>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Elija turno</legend>
+                            <div>
+                                <input 
+                                    type="radio" 
+                                    id="expose_yes"
+                                    name="expose" 
+                                    value="mañana">
+                                <label for="expose_yes">Por la mañana</label>
+                            </div>
+                            <div>
+                                <input 
+                                    type="radio" 
+                                    id="expose_no"
+                                    name="expose" 
+                                    value="tarde">
+                                <label for="expose_no">Por la tarde</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="flex-container fd-column">
+                        <label for="message">Diganos su mensaje</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <div id="send-button">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+
+            </div>
+    </section>
+
+    <footer class="bg-color-black">
+        <div class="flex-container col-12 fd-column">
+            <div class="flex-container col-12">
+                <div class="flex-container fd-column col-6">
+                    <p>Este es un trabajo práctico del alumno <span id="nombre">Juan Ignacio Peralta Bello</span> para la Escuela Da Vinci || Diseño Web</p>
+                    
+                    <ul class="flex-container">
+                        <li><a href="https://www.instagram.com/juanibello.web?utm_source=ig_web_button_share_sheet&igsh=MXdmeWFhbWtzNGZqbw=="><figure><img src="../../media/instagram.svg" alt="instagram brand"></figure></a></li>
+                        <li><a href="https://wa.me541161558713/"><figure><img src="../../media/whatsapp.svg" alt="instagram brand"></figure></a></li>
+                        <li><a href="mailto:juanperalbello@gmail.com"><figure><img src="../../media/mail.svg" alt="instagram brand"></figure></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 t-allign-center">
+                    <nav id="footer-nav">
+                        <p>Explora otras secciones de este sitio:</p>
+                        <ul class="t-allign-left">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="list.html">Personajes</a></li>
+                            <li><a href="info.html">Conocer Más</a></li>
+                            <li><a href="formulario/forms.html">Vive la Experiencia</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div>
+                <span>Copyright © 2025</span>
+            </div>
+        </div>        
+    </footer>
+</body>
+</html>
