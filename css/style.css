@@ -102,6 +102,11 @@ html
     }
 }
 
+.menu-mobile
+{
+    display: none;
+}
+
 #character-banner
 {
     height: 80vh;
@@ -636,17 +641,74 @@ footer
     text-align: left;
 }
 
-
 .d-none
 {
     display: none;
 }
 
-
-
 .shacking:hover
 {
     animation: shacke 0.3s alternate infinite;
+}
+
+@media screen and (max-width: 425px)
+{
+    #nav-bar
+    {
+        height: 0;
+        filter: opacity(0);
+        overflow: hidden;
+        left: 65%;
+        top: 10%;
+        border-radius: 25px;
+        padding: 25px 10px;
+        transition: all 0.5s;
+        img{display: none;}
+        ul{flex-direction: column; align-items: start; justify-content: space-evenly; gap: 50px;}
+        a{font-size: .8rem;}
+    }
+
+
+    #menu-toggle:checked ~ #nav-bar
+    {
+        height: 300px;
+        overflow: auto;
+        filter: opacity(1);
+        transition: all 0.5s;
+    }   
+    .menu-mobile
+    {
+        z-index: 2;
+        position: fixed;
+        left: 90%;
+        top: 3%;
+        display: block;
+    }
+
+    #header-section
+    {
+        height: 100%;
+
+        #header-img
+        {
+            display: none;
+        }
+
+        h1
+        {
+            font-size: 3rem;
+            margin: 20% auto;
+        }
+    }
+
+    main
+    {
+        div.col-8
+        {
+            flex-direction: column;
+        }
+        p{margin: 0;}
+    }
 }
 
 /* Animaciones */
