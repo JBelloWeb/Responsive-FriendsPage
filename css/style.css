@@ -713,6 +713,19 @@ footer
         }
     }
 
+    #thanks
+    { 
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        h2
+        {
+            font-size: 2.4rem; 
+        }   
+        p{font-family: 'josefine-itallic'; font-size: 1.25rem;}
+    
+    }
+
     #character-banner
     {
         background-image: url(../media/gang-m.jpg);  
