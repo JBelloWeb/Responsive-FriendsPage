@@ -658,24 +658,30 @@ footer
         height: 0;
         filter: opacity(0);
         overflow: hidden;
-        left: 65%;
+        left: 60%;
         top: 10%;
         border-radius: 25px;
         padding: 25px 10px;
         transition: all 0.5s;
         img{display: none;}
         ul{flex-direction: column; align-items: start; justify-content: space-evenly; gap: 50px;}
+        li{padding-right: 20px;}
         a{font-size: .8rem;}
     }
 
 
-    #menu-toggle:checked ~ #nav-bar
+    #menu-toggle
     {
-        height: 300px;
-        overflow: auto;
-        filter: opacity(1);
-        transition: all 0.5s;
-    }   
+       filter: opacity(0);
+        &:checked ~ #nav-bar
+        {
+            height: 300px;
+            overflow: auto;
+            filter: opacity(1);
+            transition: all 0.5s;
+        } 
+    }
+     
     .menu-mobile
     {
         z-index: 2;
@@ -683,6 +689,7 @@ footer
         left: 90%;
         top: 3%;
         display: block;
+        border-radius: 8px;
     }
 
     #header-section
@@ -706,12 +713,13 @@ footer
         padding: 0px;
         div.col-12-m
         {
-            flex-direction: column;
+            flex-direction: column-reverse;
         }
         div.col-12m
         {
             padding: 20px 0;
         }
+        div.col-11-m{padding: 40px 0;}
         p{margin: 0;}
         h2{
             font-size: 1.5rem;
@@ -719,17 +727,28 @@ footer
         }
     }
 
+    section
+    {
+        p
+        {
+            font-size: 1rem;
+            padding: 0 15px;
+        }
+    }
+
     footer
     {
         height: 100%;
-        div.col-12
+        div.col-12-m
         {
             padding: 10px;
             height: 100%;
         }
-        div.col-6
+        div.col-6-m
         {
             height: 100%;
+            font-size: 0.9rem;
+            ul{gap: 20px};
         }
         ul
         {
@@ -739,7 +758,8 @@ footer
             display: flex;
             flex-direction: row;
             gap: 10px;
-            img{width: 30px;}
+            text-decoration: dotted;
+            img{width: 25px;}
         }
     }
 
