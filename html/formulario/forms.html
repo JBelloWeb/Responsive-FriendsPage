@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://kit.fontawesome.com/8a29c175c9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../css/style.css">
     <title>Vive la experiencia</title>
     <link rel="icon" href="../../favicon.ico">
@@ -13,25 +14,32 @@
             
         </div>
     </header>
+
+   <input type="checkbox" class="menu-mobile" id="menu-toggle">
+        <label class="menu-mobile" for="menu-toggle">
+            <i class="fa-solid fa-bars" style="color: #ffcb05;"></i>
+        </label>
+
+        
     <nav id="nav-bar" class="flex-container justify-around">
-            <a href="https://www.warnerbros.com/tv/friends" target="_blank">
-                <figure>
-                    <img src="../../media/logo.png" alt="friends logo">
-                </figure> 
-            </a>
+         <a href="https://www.warnerbros.com/tv/friends" target="_blank">
+             <figure>
+                 <img src="../media/logo.png" alt="friends logo">
+             </figure> 
+         </a>
     
-           <ul class="flex-container justify-end">
-                <li class="shacking"><a href="../index.html">Inicio</a></li>
-                <li class="shacking"><a href="../list.html">Personajes</a></li>
-                <li class="shacking"><a href="../info.html">Conocer Más</a></li>
-                <li class="shacking"><a href="forms.html">Vive la Experiencia</a></li>
-            </ul> 
+        <ul class="flex-container justify-end">
+             <li class="shacking"><a href="index.html">Inicio</a></li>
+             <li class="shacking"><a href="list.html">Personajes</a></li>
+             <li class="shacking"><a href="info.html">Conocer Más</a></li>
+             <li class="shacking"><a href="formulario/forms.html">Vive la Experiencia</a></li>
+         </ul> 
     </nav>
 
     <section id="forms-section">
         <h2 class="t-allign-center big-header bg-color-yellow">THE FRIENDS EXPERIENCE</h2>
 
-        <div class="bg-color-white box-shadow col-6">
+        <div class="bg-color-white box-shadow col-6 col-11-m">
                 <form class="flex-container wrap" action="thanks.html" method="get">
                     <div>
                         <label for="name" class="bg-color-purple">Nombre:</label>
@@ -118,9 +126,9 @@
     </section>
 
     <footer class="bg-color-black">
-        <div class="flex-container col-12 fd-column">
-            <div class="flex-container col-12">
-                <div class="flex-container fd-column col-6">
+        <div class="flex-container col-12 col-12-m fd-column">
+            <div class="flex-container col-12 col-12-m">
+                <div class="flex-container fd-column col-6 col-6-m">
                     <p>Este es un trabajo práctico del alumno <span id="nombre">Juan Ignacio Peralta Bello</span> para la Escuela Da Vinci || Diseño Web</p>
                     
                     <ul class="flex-container">
@@ -130,13 +138,13 @@
                     </ul>
                 </div>
 
-                <div class="col-6 t-allign-center">
+                <div class="col-6 col-6-m t-allign-center">
                     <nav id="footer-nav">
                         <p>Explora otras secciones de este sitio:</p>
                         <ul class="t-allign-left">
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="list.html">Personajes</a></li>
-                            <li><a href="info.html">Conocer Más</a></li>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="../list.html">Personajes</a></li>
+                            <li><a href="../info.html">Conocer Más</a></li>
                             <li><a href="formulario/forms.html">Vive la Experiencia</a></li>
                         </ul>
                     </nav>

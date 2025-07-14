@@ -135,13 +135,13 @@ html
 {
     background-image: url(../media/cafe-bg.jpg);
     background-attachment: fixed;
-   div.box-shadow
-   {
-        border-radius: 25px;
-        margin: 100px auto;
-   }
-   form{padding: 50px;}
-   textarea{max-width: 500px; width: 500px; min-height: 100px;}
+    div.box-shadow
+    {
+         border-radius: 25px;
+         margin: 100px auto;
+    }
+    form{padding: 50px;}
+    textarea{max-width: 500px; width: 500px; min-height: 100px;}
 }
 
 #send-button
@@ -726,6 +726,19 @@ footer
         height: 40vh;    
         background-image: url(../media/banner-m.jpg);
         background-position: center center
+    }
+
+    #forms-banner
+    {
+        height: 40vh;
+        background-attachment: local;
+        background-position: center center;
+        background-image: url(../media/cafe-banner-m.jpg);
+    }
+
+    #forms-section
+    {
+        textarea{max-width: 300px; width: 100px; min-height: 100px;}
     }
 
     main
