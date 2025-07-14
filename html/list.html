@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8a29c175c9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
     <title>Personajes</title>
     <link rel="icon" href="../favicon.ico">
@@ -14,7 +15,14 @@
             
         </div>
     </header>
-    <nav id="nav-bar" class="flex-container justify-around">
+
+        <input type="checkbox" class="menu-mobile" id="menu-toggle">
+        <label class="menu-mobile" for="menu-toggle">
+            <i class="fa-solid fa-bars" style="color: #ffcb05;"></i>
+        </label>
+
+        
+        <nav id="nav-bar" class="flex-container justify-around">
             <a href="https://www.warnerbros.com/tv/friends" target="_blank">
                 <figure>
                     <img src="../media/logo.png" alt="friends logo">
@@ -27,10 +35,11 @@
                 <li class="shacking"><a href="info.html">Conocer Más</a></li>
                 <li class="shacking"><a href="formulario/forms.html">Vive la Experiencia</a></li>
             </ul> 
-    </nav>
+        </nav>
 
-    <section class="flex-container fd-column col-12">
-        <div class="col-8 flex-container justify-center">
+
+    <section class="flex-container fd-column col-12 col-12-m">
+        <div class="col-8 col-10-m flex-container justify-center">
             <div><a class="expand-link bg-color-black flex-container justify-center" href="#monica"><figure><img alt="monica icon" src="/media/head-monica.png"></figure></a></div>
             <div><a class="expand-link bg-color-black flex-container justify-center" href="#chandler"><figure><img alt="chandler icon" src="/media/head-chandler.png"></figure></a></div>
             <div><a class="expand-link bg-color-black flex-container justify-center" href="#rachel"><figure><img alt="rachel icon" src="/media/head-rachel.png"></figure></a></div>
@@ -39,12 +48,12 @@
             <div><a class="expand-link bg-color-black flex-container justify-center" href="#joey"><figure><img alt="joey icon" src="/media/head-joey.png"></figure></a></div>
         </div>  
 
-        <div id="banners" class="flex-container justify-center col-10">
-            <div class="character-expand bg-color-purple col-2 flex-container box-shadow" id="monica">   
+        <div id="banners" class="flex-container justify-center col-10 col-10-m">
+            <div class="character-expand bg-color-purple col-2 col-12-m flex-container box-shadow" id="monica">   
                 <h2>MONICA</h2>
                 <div class="d-none flex-container">
-                    <figure>
-                        <img src="../media/monica.jpg" alt="monica picture  ">
+                    <figure class="d-none-m">
+                        <img src="../media/monica.jpg" alt="monica picture">
                     </figure>
                     <div class="flex-container fd-column">
                        <h3>Monica E. Geller</h3> 
@@ -52,10 +61,10 @@
                     </div>                    
                 </div>
             </div>
-            <div class="character-expand bg-color-orange col-2 flex-container box-shadow" id="chandler">   
+            <div class="character-expand bg-color-orange col-2 col-12-m flex-container box-shadow" id="chandler">   
                 <h2>CHANDLER</h2>
                 <div class="d-none flex-container">
-                    <figure>
+                    <figure class="d-none-m">
                         <img src="../media/chandler.jpg" alt="chandler picture">
                     </figure>
                     <div class="flex-container fd-column">
@@ -64,10 +73,10 @@
                     </div>                    
                 </div>
             </div>
-            <div class="character-expand bg-color-purple col-2 flex-container box-shadow" id="rachel">   
+            <div class="character-expand bg-color-purple col-2 col-12-m flex-container box-shadow" id="rachel">   
                 <h2>RACHEL</h2>
                 <div class="d-none flex-container">
-                    <figure>
+                    <figure class="d-none-m">
                         <img src="../media/rachel.jpg" alt="rachel picture">
                     </figure>
                     <div class="flex-container fd-column">
@@ -76,10 +85,10 @@
                     </div>                    
                 </div>
             </div>
-            <div class="character-expand bg-color-orange col-2 flex-container box-shadow" id="ross">   
+            <div class="character-expand bg-color-orange col-2 col-12-m flex-container box-shadow" id="ross">   
                 <h2>ROSS</h2>
                 <div class="d-none flex-container">
-                    <figure>
+                    <figure class="d-none-m">
                         <img src="../media/ross.jpg" alt="ross picture">
                     </figure>
                     <div class="flex-container fd-column">
@@ -88,10 +97,10 @@
                     </div> 
                 </div>
             </div>
-            <div class="character-expand bg-color-purple col-2 flex-container box-shadow" id="phoebe">   
+            <div class="character-expand bg-color-purple col-2 col-12-m flex-container box-shadow" id="phoebe">   
                 <h2>PHOEBE</h2>
                 <div class="d-none flex-container">
-                    <figure>
+                    <figure class="d-none-m">
                         <img src="../media/phoebe.jpg" alt="ross picture">
                     </figure>
                     <div class="flex-container fd-column">
@@ -100,10 +109,10 @@
                     </div> 
                 </div>
             </div>
-            <div class="character-expand bg-color-orange col-2 flex-container box-shadow" id="joey">
+            <div class="character-expand bg-color-orange col-2 col-12-m flex-container box-shadow" id="joey">
                 <h2>JOEY</h2>
                 <div class="d-none flex-container">
-                    <figure>
+                    <figure class="d-none-m">
                         <img src="../media/joey.jpg" alt="ross picture">
                     </figure>
                     <div class="flex-container fd-column">
@@ -117,9 +126,9 @@
     </section>
 
     <footer class="bg-color-black">
-        <div class="flex-container col-12 fd-column">
-            <div class="flex-container col-12">
-                <div class="flex-container fd-column col-6">
+        <div class="flex-container col-12 col-12-m fd-column">
+            <div class="flex-container col-12 col-12-m">
+                <div class="flex-container fd-column col-6 col-6-m">
                     <p>Este es un trabajo práctico del alumno <span id="nombre">Juan Ignacio Peralta Bello</span> para la Escuela Da Vinci || Diseño Web</p>
                     
                     <ul class="flex-container">
@@ -129,7 +138,7 @@
                     </ul>
                 </div>
 
-                <div class="col-6 t-allign-center">
+                <div class="col-6 col-6-m t-allign-center">
                     <nav id="footer-nav">
                         <p>Explora otras secciones de este sitio:</p>
                         <ul class="t-allign-left">

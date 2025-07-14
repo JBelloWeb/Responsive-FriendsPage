@@ -35,12 +35,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    
 }
 
 html
 {
     font-family: 'josefine';
+    scroll-behavior: smooth;
+    scroll-padding-top: 250px;
 }
 
 #thanks
@@ -345,7 +347,7 @@ html:has(#monica:target) body{background-color: var(--purple) !important;}
     p{ max-width: 90%; line-height: 1.3;}
     &:target
     {
-        width: 100%;
+        width: 90%;
         background-color: var(--white);   
         h2{display: none;} 
         div.d-none
@@ -708,6 +710,15 @@ footer
         }
     }
 
+    #character-banner
+    {
+        background-image: url(../media/gang-m.jpg);  
+        height: 50vh;    
+        background-attachment:fixed;    
+        background-position: 50% 0%;
+        margin-bottom: 50px;
+    }
+
     main
     {
         padding: 0px;
@@ -734,6 +745,134 @@ footer
             font-size: 1rem;
             padding: 0 15px;
         }
+
+        div.col-10-m
+        {
+         gap: 0.6rem;
+        }
+    }
+
+    #banners
+    {
+        flex-direction: column;
+        div
+        {
+            height: 25vh;
+            h2{writing-mode: horizontal-tb !important;}
+        }
+    }
+
+    #monica
+    {
+        border-radius: 15px 15px 0 0;
+        h3{font-size: 1.5rem;}
+        div.d-none
+        {
+            div.fd-column
+            {
+                justify-content: flex-end;
+                padding-top: 500px;
+            }
+
+        }
+        &:target
+        {
+            h2{display: none;}
+            height: 1000px;
+            background-color: var(--white);
+            div.d-none
+            {
+                display: flex;
+                justify-content: flex-end;
+                animation: appear 0.8s linear;
+            }
+            ~ #chandler
+            {width: 90%; height: 2vh; background-color: var(--blue); h2{display: none;}}
+            ~ #rachel
+            {width: 90%; height: 2vh; background-color: var(--red); h2{display: none;}}
+            ~ #ross
+            {width: 90%; height: 2vh; background-color: var(--blue); h2{display: none;}}
+            ~ #phoebe   
+            {width: 90%; height: 2vh; background-color: var(--red); h2{display: none;}}
+            ~ #joey
+            {width: 90%; height: 2vh; background-color: var(--blue); h2{display: none;}}
+        }
+    }
+
+    #chandler
+    {
+        h3{font-size: 1.5rem;}
+        div.d-none
+        {
+            div.fd-column
+            {
+                justify-content: flex-end;
+                padding-top: 500px;
+            }
+
+        }
+        &:target
+        {
+            h2{display: none;}
+            height: 1000px;
+            background-color: var(--white);
+            div.d-none
+            {
+                display: flex;
+                justify-content: flex-end;
+                animation: appear 0.8s linear;
+            }
+            ~ #rachel
+            {width: 90%; height: 2vh; background-color: var(--red); h2{display: none;}}
+            ~ #ross
+            {width: 90%; height: 2vh; background-color: var(--blue); h2{display: none;}}
+            ~ #phoebe   
+            {width: 90%; height: 2vh; background-color: var(--red); h2{display: none;}}
+            ~ #joey
+            {width: 90%; height: 2vh; background-color: var(--blue); h2{display: none;}}
+        }
+    }
+    div:has(#chandler:target) #monica {width: 90%; height: 2vh; background-color: var(--red); h2{display: none;}}
+
+    #rachel
+    {
+        h3{font-size: 1.5rem;}
+        div.d-none
+        {
+            div.fd-column
+            {
+                justify-content: flex-end;
+                padding-top: 600px;
+            }
+
+        }
+        &:target
+        {
+            h2{display: none;}
+            height: 1000px;
+            background-color: var(--white);
+            div.d-none
+            {
+                display: flex;
+                justify-content: flex-end;
+                animation: appear 0.8s linear;
+            }
+            ~ #ross
+            {width: 90%; height: 2vh; background-color: var(--blue); h2{display: none;}}
+            ~ #phoebe   
+            {width: 90%; height: 2vh; background-color: var(--red); h2{display: none;}}
+            ~ #joey
+            {width: 90%; height: 2vh; background-color: var(--blue); h2{display: none;}}
+        }
+    }
+    div:has(#rachel:target) #monica {width: 90%; height: 2vh; background-color: var(--red); h2{display: none;}}
+    div:has(#rachel:target) #chandler {width: 90%; height: 2vh; background-color: var(--blue); h2{display: none;}}
+    
+
+    #joey
+    {
+        border-radius: 0 0 15px 15px;
+
     }
 
     footer
@@ -763,7 +902,16 @@ footer
         }
     }
 
-    
+    .flex-container
+    {
+        max-width: 90vw;
+    }
+
+    .d-none-m
+    {
+        display: none;
+    }
+
     .col-1-m { width:8.3333% }
     .col-2-m { width:16.6667% }
     .col-3-m { width:25% }
