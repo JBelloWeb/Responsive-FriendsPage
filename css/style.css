@@ -748,7 +748,7 @@ footer
 
         div.col-10-m
         {
-         gap: 0.6rem;
+         gap: 0.4rem;
         }
     }
 
@@ -834,6 +834,7 @@ footer
     }
     div:has(#chandler:target) #monica {width: 90%; height: 2vh; background-color: var(--red); h2{display: none;}}
 
+    
     #rachel
     {
         h3{font-size: 1.5rem;}
@@ -867,12 +868,108 @@ footer
     }
     div:has(#rachel:target) #monica {width: 90%; height: 2vh; background-color: var(--red); h2{display: none;}}
     div:has(#rachel:target) #chandler {width: 90%; height: 2vh; background-color: var(--blue); h2{display: none;}}
-    
+
+
+    #ross
+    {
+        h3{font-size: 1.5rem;}
+        div.d-none
+        {
+            div.fd-column
+            {
+                justify-content: flex-end;
+                padding-top: 600px;
+            }
+
+        }
+        &:target
+        {
+            h2{display: none;}
+            height: 1000px;
+            background-color: var(--white);
+            div.d-none
+            {
+                display: flex;
+                justify-content: flex-end;
+                animation: appear 0.8s linear;
+            }
+            ~ #phoebe   
+            {width: 90%; height: 2vh; background-color: var(--red); h2{display: none;}}
+            ~ #joey
+            {width: 90%; height: 2vh; background-color: var(--blue); h2{display: none;}}
+        }
+    }
+    div:has(#ross:target) #monica {width: 90%; height: 2vh; background-color: var(--red); h2{display: none;}}
+    div:has(#ross:target) #chandler {width: 90%; height: 2vh; background-color: var(--blue); h2{display: none;}}
+    div:has(#ross:target) #rachel {width: 90%; height: 2vh; background-color: var(--red); h2{display: none;}}
+
+    #phoebe
+    {
+        h3{font-size: 1.5rem;}
+        div.d-none
+        {
+            div.fd-column
+            {
+                justify-content: flex-end;
+                padding-top: 600px;
+            }
+
+        }
+        &:target
+        {
+            h2{display: none;}
+            height: 1000px;
+            background-color: var(--white);
+            div.d-none
+            {
+                display: flex;
+                justify-content: flex-end;
+                animation: appear 0.8s linear;
+            }
+            ~ #joey
+            {width: 90%; height: 2vh; background-color: var(--blue); h2{display: none;}}
+        }
+    }
+    div:has(#phoebe:target) #monica {width: 90%; height: 2vh; background-color: var(--red); h2{display: none;}}
+    div:has(#phoebe:target) #chandler {width: 90%; height: 2vh; background-color: var(--blue); h2{display: none;}}
+    div:has(#phoebe:target) #rachel {width: 90%; height: 2vh; background-color: var(--red); h2{display: none;}}
+    div:has(#phoebe:target) #ross {width: 90%; height: 2vh; background-color: var(--blue); h2{display: none;}}
 
     #joey
     {
         border-radius: 0 0 15px 15px;
+        h3{font-size: 1.2rem;}
+        div.d-none
+        {
+            div.fd-column
+            {
+                justify-content: flex-end;
+                padding-top: 600px;
+            }
 
+        }
+        &:target
+        {
+            h2{display: none;}
+            height: 1000px;
+            background-color: var(--white);
+            div.d-none
+            {
+                display: flex;
+                justify-content: flex-end;
+                animation: appear 0.8s linear;
+            }
+        }
+    }
+    div:has(#joey:target) #monica {width: 90%; height: 2vh; background-color: var(--red); h2{display: none;}}
+    div:has(#joey:target) #chandler {width: 90%; height: 2vh; background-color: var(--blue); h2{display: none;}}
+    div:has(#joey:target) #rachel {width: 90%; height: 2vh; background-color: var(--red); h2{display: none;}}
+    div:has(#joey:target) #ross {width: 90%; height: 2vh; background-color: var(--blue); h2{display: none;}}
+    div:has(#joey:target) #phoebe {width: 90%; height: 2vh; background-color: var(--red); h2{display: none;}}
+
+    #close-btn
+    {
+        margin-bottom: 60px;
     }
 
     footer
