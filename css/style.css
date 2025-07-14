@@ -686,6 +686,8 @@ footer
      
     .menu-mobile
     {
+        background-color: var(--purple);
+        padding: 8px;
         z-index: 2;
         position: fixed;
         left: 90%;
@@ -717,6 +719,13 @@ footer
         background-attachment:fixed;    
         background-position: 50% 0%;
         margin-bottom: 50px;
+    }
+
+    #info-banner
+    {
+        height: 40vh;    
+        background-image: url(../media/banner-m.jpg);
+        background-position: center center
     }
 
     main
@@ -972,6 +981,44 @@ footer
         margin-bottom: 60px;
     }
 
+    #place
+    {
+        div.col-12-m
+        {
+            gap: 0;
+            div.col-10-m
+            {
+                margin-top: 50px;
+            }
+        }
+
+        #map
+        {
+            margin-bottom: 50px;
+        }
+    }
+   
+    #music
+    {
+        audio{margin-bottom: 50px;}
+    }
+
+    #staff
+    {
+        ul
+        {
+            align-items: center;
+            align-content: center;
+            li
+            {
+                margin: 0 auto;
+                align-items: center;
+                align-content: center;
+            }
+        }
+        
+    }
+
     footer
     {
         height: 100%;
@@ -1002,6 +1049,11 @@ footer
     .flex-container
     {
         max-width: 90vw;
+    }
+
+    .fd-m-column
+    {
+        flex-direction: column;
     }
 
     .d-none-m

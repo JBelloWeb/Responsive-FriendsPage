@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8a29c175c9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
     <title>Conocer Más</title>
     <link rel="icon" href="../favicon.ico">
@@ -14,7 +15,14 @@
             
         </div>
     </header>
-    <nav id="nav-bar" class="flex-container justify-around">
+
+    <input type="checkbox" class="menu-mobile" id="menu-toggle">
+        <label class="menu-mobile" for="menu-toggle">
+            <i class="fa-solid fa-bars" style="color: #ffcb05;"></i>
+        </label>
+
+        
+        <nav id="nav-bar" class="flex-container justify-around">
             <a href="https://www.warnerbros.com/tv/friends" target="_blank">
                 <figure>
                     <img src="../media/logo.png" alt="friends logo">
@@ -27,76 +35,76 @@
                 <li class="shacking"><a href="info.html">Conocer Más</a></li>
                 <li class="shacking"><a href="formulario/forms.html">Vive la Experiencia</a></li>
             </ul> 
-    </nav>
+        </nav>
 
     <section id="place">
         <div class="big-header bg-color-red"><h2 class="t-allign-center">LUGAR</h2></div>
-        <div class="flex-container col-12">
-            <div class=" flex-container col-8 fd-column">
+        <div class="flex-container col-12 col-12-m fd-m-column">
+            <div class="flex-container col-8 col-10-m fd-column">
                 <p >La esquina de  <abbr title="Grove Street">Grove St.</abbr> y <abbr title="Bedford Street">Bedford St.</abbr>, ubicada en el barrio de West Village en Manhattan, Nueva York, es sumamente importante para la serie Friends porque <strong>es donde se encuentra el edificio que representa el hogar de varios de los protagonistas.</strong> Aunque la serie fue filmada en su mayoría en estudios en Los Ángeles, los productores utilizaron una imagen real del edificio en esta esquina como la toma exterior del departamento.</p>
                 <p>
                   <strong>Es el punto de encuentro central de los seis amigos.</strong> Allí ocurren muchas de las escenas más memorables: cenas, juegos, peleas, reconciliaciones y momentos clave en su evolución emocional. Se ha convertido en un <strong>ícono cultural y turístico</strong> gracias a la conexión emocional que la serie construyó con millones de espectadores.  
                 </p>
             </div>
             
-            <iframe id="map" class="box-shadow col-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1696.7931089876602!2d-74.00502693877769!3d40.73251038017177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25993473000bb%3A0x2cf4d0ad4dfac07f!2sGrove%20St%20%26%20Bedford%20St%2C%20New%20York%2C%20NY%2010014%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1751486579072!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe id="map" class="box-shadow col-4 col-10-m" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1696.7931089876602!2d-74.00502693877769!3d40.73251038017177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25993473000bb%3A0x2cf4d0ad4dfac07f!2sGrove%20St%20%26%20Bedford%20St%2C%20New%20York%2C%20NY%2010014%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1751486579072!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
 
     <section id="music">
         <div class="big-header bg-color-blue"><h2 class="t-allign-center">MÚSICA</h2></div>
-        <div class="flex-container fd-column justify-center col-12">
-            <p class="t-allign-center col-10">El tema musical principal de Friends, <em>“I'll Be There for You”</em> de The Rembrandts, <strong>es una de las canciones más icónicas de la televisión.</strong> Desde sus primeros acordes, transmite el espíritu de la serie: amistad incondicional, apoyo mutuo y optimismo frente a las dificultades de la vida adulta. Con <strong>su ritmo enérgico y su letra pegadiza se convirtió en un himno generacional</strong>  que encapsula la esencia del grupo de amigos que siempre están presentes los unos para los otros, sin importar las circunstancias. Además, su videoclip, que muestra a los actores bailando y divirtiéndose en la fuente, reforzó el <em>tono desenfadado y cercano de la serie</em>, convirtiendo la canción en un símbolo inseparable del universo Friends.</p>
+        <div class="flex-container fd-column justify-center col-12 col-12-m">
+            <p class="t-allign-center col-10 col-10-m">El tema musical principal de Friends, <em>“I'll Be There for You”</em> de The Rembrandts, <strong>es una de las canciones más icónicas de la televisión.</strong> Desde sus primeros acordes, transmite el espíritu de la serie: amistad incondicional, apoyo mutuo y optimismo frente a las dificultades de la vida adulta. Con <strong>su ritmo enérgico y su letra pegadiza se convirtió en un himno generacional</strong>  que encapsula la esencia del grupo de amigos que siempre están presentes los unos para los otros, sin importar las circunstancias. Además, su videoclip, que muestra a los actores bailando y divirtiéndose en la fuente, reforzó el <em>tono desenfadado y cercano de la serie</em>, convirtiendo la canción en un símbolo inseparable del universo Friends.</p>
             <audio controls src="../media/intro-theme.mp3"></audio>
         </div>
     </section>
 
     <section id="staff">
         <div class="big-header bg-color-black"><h2 class="t-allign-center">EQUIPO</h2></div>
-            <ul class="flex-container col-12 wrap">
-                <li class="col-2">
+            <ul class="flex-container col-12 col-12-m wrap">
+                <li class="col-2 col-8-m">
                     <div class="flex-container fd-column bg-color-black">
                         <a target="_blank" href="https://www.imdb.com/es-es/name/nm0442035/?ref_=tt_ov_1_2"><figure><img src="../media/marta.jpg" alt="marta"></figure></a>
                         <h4>Marta Kauffman - Guionista</h4>
                     </div>
                 </li>
-                <li class="col-2">
+                <li class="col-2 col-8-m">
                     <div class="flex-container fd-column bg-color-black">
                         <a target="_blank" href="https://www.imdb.com/es-es/name/nm0442035/?ref_=tt_ov_1_2"><figure><img src="../media/david-crane.jpg" alt="david crane"></figure></a>
                         <h4>David Crane - Guionista</h4>
                     </div>
                 </li>
-                <li class="col-2">
+                <li class="col-2 col-8-m">
                     <div class="flex-container fd-column bg-color-black">
                         <a target="_blank" href="https://www.imdb.com/es-es/name/nm0000098/?ref_=tt_ov_2_1"><figure><img src="../media/jennifer.jpg" alt="jennifer"></figure></a>
                         <h4>Jennifer Anniston - Rachel</h4>
                     </div>
                 </li>
-                <li class="col-2">
+                <li class="col-2 col-8-m">
                     <div class="flex-container fd-column bg-color-black">
                         <a target="_blank" href="https://www.imdb.com/es-es/name/nm0001455/?ref_=ttfc_fcr_cst_4"><figure><img src="../media/matt.jpg" alt="matt"></figure></a>
                         <h4>Matt Leblanc - Joey</h4>
                     </div>
                 </li>
-                <li class="col-2">
+                <li class="col-2 col-8-m">
                     <div class="flex-container fd-column bg-color-black">
                         <a target="_blank" href="https://www.imdb.com/es-es/name/nm0001612/?ref_=ttfc_fcr_cst_5"><figure><img src="../media/mathew.jpg" alt="mathew"></figure></a>
                         <h4>Mathew Perry - Chandler</h4>
                     </div>
                 </li>
-                <li class="col-2">
+                <li class="col-2 col-8-m">
                     <div class="flex-container fd-column bg-color-black">
                         <a target="_blank" href="https://www.imdb.com/es-es/name/nm0001435/?ref_=tt_ov_2_3"><figure><img src="../media/lisa.jpg" alt="lisa"></figure></a>
                         <h4>Lisa Kudrow - Phoebe</h4>
                     </div>
                 </li>
-                <li class="col-2">
+                <li class="col-2 col-8-m">
                     <div class="flex-container fd-column bg-color-black">
                         <a target="_blank" href="https://www.imdb.com/es-es/name/nm0001710/?ref_=ttfc_fcr_cst_6"><figure><img src="../media/david-shwimmer.jpg" alt="david schwimmer"></figure></a>
                         <h4>David Schwimmer - Ross</h4>
                     </div>
                 </li>
-                <li class="col-2">
+                <li class="col-2 col-8-m">
                     <div class="flex-container fd-column bg-color-black">
                         <a target="_blank" href="https://www.imdb.com/es-es/name/nm0001073/?ref_=tt_ov_2_2"><figure><img src="../media/courtney.jpg" alt="courtney"></figure></a>
                         <h4>Courtney Cox - Monica</h4>
@@ -106,9 +114,9 @@
     </section>
 
     <footer class="bg-color-black">
-        <div class="flex-container col-12 fd-column">
-            <div class="flex-container col-12">
-                <div class="flex-container fd-column col-6">
+        <div class="flex-container col-12 col-12-m fd-column">
+            <div class="flex-container col-12 col-12-m">
+                <div class="flex-container fd-column col-6 col-6-m">
                     <p>Este es un trabajo práctico del alumno <span id="nombre">Juan Ignacio Peralta Bello</span> para la Escuela Da Vinci || Diseño Web</p>
                     
                     <ul class="flex-container">
@@ -118,7 +126,7 @@
                     </ul>
                 </div>
 
-                <div class="col-6 t-allign-center">
+                <div class="col-6 col-6-m t-allign-center">
                     <nav id="footer-nav">
                         <p>Explora otras secciones de este sitio:</p>
                         <ul class="t-allign-left">
