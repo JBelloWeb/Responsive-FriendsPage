@@ -738,7 +738,7 @@ footer
 
     #forms-section
     {
-        textarea{max-width: 300px; width: 100px; min-height: 100px;}
+        textarea{max-width: 300px; width: 200px; min-height: 100px;}
     }
 
     main
